@@ -5,7 +5,7 @@
 }
 /* ------------------------------------------ LAYOUT RULES --*/
 body {
-    background: url(../img/blue-bg.jpg);
+    background: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 	
@@ -13,8 +13,8 @@ body {
 .header
 {
 	width:100%;
-	background-color:navy;
-	color:white;
+	background-color:#5a3313;
+	color:#f7e4d7;
 	margin-top:0;
 	padding-top:3%;
 	padding-bottom:3%;
@@ -25,6 +25,7 @@ h1
 	margin:0;
 	text-align:center;
 	font-family: 'Amaranth', sans-serif;
+	color: #f4e1c3;
 	text-shadow: 3px 3px 6px black;
 }
 .para1
@@ -33,7 +34,7 @@ h1
 font-family: 'Kaushan Script', cursive;*/
     font-family: 'Lato', sans-serif;
 font-size:18px;
-    color: #565557;
+    color: #8b4d2b;
         font-weight: 500;
 /*text-shadow: 3px 3px 6px black;*/
 }
@@ -59,7 +60,7 @@ h2
 	padding-top:20px;
 	font-family: 'Montserrat Alternates', sans-serif;
 	font-size:25px;
-	    color: #364775;
+	    color: #d4915e;
 	
 }
 input[type="radio"]
@@ -68,12 +69,12 @@ input[type="radio"]
 }
 .border-up
 {
-	border-top:4px solid navy;
+	border-top:4px solid #8B4513;
 	margin-bottom:3px;
 }
 .border-down
 {
-	border-top:2px solid navy;
+	border-top:2px solid #8B4513;
 	margin-bottom:2%;
 }
 .contact
@@ -85,7 +86,7 @@ input[type="radio"]
 	letter-spacing:2px;
 	font-size:20px;
 	font-weight: bold;
-    color: #364775;
+    color: #CD853F;
 	
 	
 }
@@ -93,7 +94,7 @@ input[type="radio"]
 {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
-    color: #364775;
+    color: #8B4513;
 	letter-spacing:2px;
 	font-size:20px;
 
@@ -108,19 +109,20 @@ label
 }
 .border_3
 {
-	border-top:2px solid navy;
+	border-top:2px solid #8B4513;
 	margin-bottom:25px;
 }
 
-input[type="text"],input[type="email"],input[type="tel"],select,#zip
+input[type="text"],input[type="email"],input[type="tel"],select,#zip,textarea
 {
 	width:100%;
 	margin-bottom:2%;
 	margin-top:1%;
 	height:40px;
 	border-radius:5px;
-	background-color: #eeeff1;
-	 border: 2px solid transparent;
+	background-color: #f5e9de;
+	 border: 2px solid #a06b4d;
+	 color: #5a3313;
 	 font-family: 'Maven Pro', sans-serif;
 	 
 }
@@ -167,8 +169,9 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,input
 	/*border :2px solid navy;*/
 	outline:none;
 	   
-    border: 3px solid #4a597d;
-    background-color: #cdd9e8;
+    border: 3px solid #a06b4d;
+    background-color: #f2dcc1;
+	color: #5a3313;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 
@@ -200,7 +203,8 @@ button
 	width:34%;
 	border-radius:5px;
 	border: 2px solid transparent;
-	background-color:#487fc8;
+	background-color:#a56438;
+	color:#fff;
 	font-family: 'Maven Pro', sans-serif;
 	font-style: oblique;
 	font-weight:900;
@@ -219,7 +223,7 @@ button
 button:focus,button:hover
 {
 	outline:none;
-	background-color:#E39620;
+	background-color:#ab4c0d;
 	cursor:pointer;
 	color:white;
 }
@@ -346,16 +350,17 @@ label
     margin-bottom: 10px;
     height: 40px;
     border-radius: 5px;
-    background-color: #eeeff1;
-    border: 2px solid transparent;
+    background-color: #f5e9de;
+    border: 2px solid #a06b4d;
+	color: #5a3313;
     font-family: 'Maven Pro', sans-serif;
     padding-right: 10px;
 }
 
 .card-details .owner-input:focus {
     outline: none;
-    border: 3px solid #4a597d;
-    background-color: #cdd9e8;
+    border: 3px solid #a06b4d;
+    background-color: #f2dcc1;
     transition: all 0.3s ease-in-out;
 }
 
