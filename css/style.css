@@ -113,7 +113,7 @@ label
 	margin-bottom:25px;
 }
 
-input[type="text"],input[type="email"],input[type="tel"],select,#zip,textarea
+input[type="text"],input[type="email"],input[type="tel"],select,#zip
 {
 	width:100%;
 	margin-bottom:2%;
@@ -132,8 +132,9 @@ textarea
 	width:100%;
 	margin-bottom:1%;
 	border-radius:5px;
-	background-color: #eeeff1;
-	border: 2px solid transparent;
+	background-color: #f5e9de;
+	border: 2px solid #a06b4d;
+	color: #5a3313;
 	font-family: 'Maven Pro', sans-serif;
 	resize: vertical;
 
