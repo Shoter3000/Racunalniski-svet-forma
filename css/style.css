@@ -30,13 +30,11 @@ h1
 }
 .para1
 {
-/*font-family: 'Dancing Script', cursive;
-font-family: 'Kaushan Script', cursive;*/
+
     font-family: 'Lato', sans-serif;
 font-size:18px;
     color: #8b4d2b;
         font-weight: 500;
-/*text-shadow: 3px 3px 6px black;*/
 }
 .container
 {
@@ -58,7 +56,7 @@ h2
 {
 	margin-top:0;
 	padding-top:20px;
-	font-family: 'Montserrat Alternates', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	font-size:25px;
 	    color: #d4915e;
 	
@@ -86,7 +84,7 @@ input[type="radio"]
 	letter-spacing:2px;
 	font-size:20px;
 	font-weight: bold;
-    color: #CD853F;
+    color: #8B4513;
 	
 	
 }
@@ -105,7 +103,7 @@ fieldset
 }
 label
 {
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 .border_3
 {
@@ -123,19 +121,19 @@ input[type="text"],input[type="email"],input[type="tel"],select,#zip
 	background-color: #f5e9de;
 	 border: 2px solid #a06b4d;
 	 color: #5a3313;
-	 font-family: 'Maven Pro', sans-serif;
+	 font-family: 'Lato', sans-serif;
 	 
 }
 
 textarea
 {
-	width:100%;
+	width: 100%;
 	margin-bottom:1%;
 	border-radius:5px;
 	background-color: #f5e9de;
 	border: 2px solid #a06b4d;
 	color: #5a3313;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
 	resize: vertical;
 
 }	 
@@ -143,7 +141,7 @@ input[placeholder]
 {
 	text-align:right;
 	padding-right:10px;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	letter-spacing:2px;
 }
 input[type="checkbox"]
@@ -153,7 +151,7 @@ input[type="checkbox"]
 }
 .dis
 {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
 	letter-spacing:2px;
 	padding-left:10px;
 	
@@ -167,7 +165,6 @@ input[type="checkbox"]
 }
 input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,input[type=number]:focus,select:focus,textarea:focus,#zip:focus
 {
-	/*border :2px solid navy;*/
 	outline:none;
 	   
     border: 3px solid #a06b4d;
@@ -178,13 +175,13 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,input
 
 }
 #state {
-   /*-webkit-appearance: menulist-button;*/
    line-height: 30px;
    background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
     background-position: 98% 50%;
-      -webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance: none;
+	appearance: none;
     text-indent: 1px;
     text-overflow: '';
 }
@@ -206,7 +203,7 @@ button
 	border: 2px solid transparent;
 	background-color:#a56438;
 	color:#fff;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-style: oblique;
 	font-weight:900;
 	font-size:25px;
@@ -230,7 +227,7 @@ button:focus,button:hover
 }
 p
 {
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 .footer
 {
@@ -238,7 +235,7 @@ p
 	margin-bottom:2%;
 	padding:20px 0 20px 0;
 	margin:0;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 /* ----------------------------- MEDIA QUERIES 760 PIXELS ---*/
@@ -253,8 +250,6 @@ p
  }
 h1
 {
-
-/*text-shadow: 3px 3px 6px black;*/
 margin:0;
     font-size: 2.2em;
 text-align:center;
@@ -354,7 +349,7 @@ label
     background-color: #f5e9de;
     border: 2px solid #a06b4d;
 	color: #5a3313;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding-right: 10px;
 }
 
