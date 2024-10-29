@@ -1,384 +1,144 @@
-
-*{
-	box-sizing: border-box;
-
+* {
+    box-sizing: border-box;
 }
-/* ------------------------------------------ LAYOUT RULES --*/
+
 body {
     background: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-	
-}
-.header
-{
-	width:100%;
-	background-color:#5a3313;
-	color:#f7e4d7;
-	margin-top:0;
-	padding-top:3%;
-	padding-bottom:3%;
-	font-size:15px;
-}
-h1
-{
-	margin:0;
-	text-align:center;
-	font-family: 'Amaranth', sans-serif;
-	color: #f4e1c3;
-	text-shadow: 3px 3px 6px black;
-}
-.para1
-{
-
-    font-family: 'Lato', sans-serif;
-font-size:18px;
-    color: #8b4d2b;
-        font-weight: 500;
-}
-.container
-{
-	margin:5% auto 0 auto;
-	width:65%;
-	background: rgba(255, 255, 255, .6) url(../img/light-toast.png) repeat left top;
-	
-	border-radius: 20px;
-	margin-bottom:40px;
-	
+    margin: 0;
+    padding: 0;
 }
 
-h2,.para1
-{
-	text-align:center;
-
-}
-h2
-{
-	margin-top:0;
-	padding-top:20px;
-	font-family: 'Nunito Sans', sans-serif;
-	font-size:25px;
-	    color: #d4915e;
-	
-}
-input[type="radio"]
-{
-	outline: transparent;
-}
-.border-up
-{
-	border-top:4px solid #8B4513;
-	margin-bottom:3px;
-}
-.border-down
-{
-	border-top:2px solid #8B4513;
-	margin-bottom:2%;
-}
-.contact
-{
-	margin-top:3%;
-	margin-bottom:10px;
-	font-family: 'PT Sans', sans-serif;
-	
-	letter-spacing:2px;
-	font-size:20px;
-	font-weight: bold;
-    color: #8B4513;
-	
-	
-}
-.payment
-{
-	font-family: 'PT Sans', sans-serif;
-	font-weight: bold;
-    color: #8B4513;
-	letter-spacing:2px;
-	font-size:20px;
-
-}
-fieldset
-{
-	border:0;
-}
-label
-{
-	font-family: 'Lato', sans-serif;
-}
-.border_3
-{
-	border-top:2px solid #8B4513;
-	margin-bottom:25px;
+.header {
+    width: 100%;
+    background-color: #5a3313;
+    color: #f7e4d7;
+    padding: 2% 0;
 }
 
-input[type="text"],input[type="email"],input[type="tel"],select,#zip
-{
-	width:100%;
-	margin-bottom:2%;
-	margin-top:1%;
-	height:40px;
-	border-radius:5px;
-	background-color: #f5e9de;
-	 border: 2px solid #a06b4d;
-	 color: #5a3313;
-	 font-family: 'Lato', sans-serif;
-	 
-}
-
-textarea
-{
-	width: 100%;
-	margin-bottom:1%;
-	border-radius:5px;
-	background-color: #f5e9de;
-	border: 2px solid #a06b4d;
-	color: #5a3313;
-	font-family: 'Lato', sans-serif;
-	resize: vertical;
-
-}	 
-input[placeholder]
-{
-	text-align:right;
-	padding-right:10px;
-	font-family: 'IBM Plex Sans Condensed', light, sans-serif;
-	letter-spacing:2px;
-}
-input[type="checkbox"]
-{
-	cursor:pointer;
-	
-}
-.dis
-{
-	font-family: 'IBM Plex Sans Condensed' light, sans-serif;
-	letter-spacing:2px;
-	padding-left:10px;
-	
-}
-
-#zip
-{
-	width:50%;
-	height:40px;
-	border-radius:5px;
-}
-input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus,input[type=number]:focus,select:focus,textarea:focus,#zip:focus
-{
-	outline:none;
-	   
-    border: 3px solid #a06b4d;
-    background-color: #f2dcc1;
-	color: #5a3313;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-
-}
-#state {
-   line-height: 30px;
-   background-image: url(../img/arrow.png);
-    background-repeat: no-repeat;
-    background-position: 98% 50%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-	appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button 
-{ 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-button
-{
-	padding-top:10px;
-	padding-bottom:10px;
-	width:34%;
-	border-radius:5px;
-	border: 2px solid transparent;
-	background-color:#a56438;
-	color:#fff;
-	font-family: 'Nunito Sans', sans-serif;
-	font-style: oblique;
-	font-weight:900;
-	font-size:25px;
-	margin:0 0 0 33%;
-
-}
-.round{
-	width:20px;
-	border-radius:50%;
-	color:white;
-	background-color:turquoise;
-	margin-right:10px;
-	text-align:center;
-}
-button:focus,button:hover
-{
-	outline:none;
-	background-color:#ab4c0d;
-	cursor:pointer;
-	color:white;
-}
-p
-{
-	font-family: 'Nunito Sans', sans-serif;
-}
-.footer
-{
-	text-align:center;
-	margin-bottom:2%;
-	padding:20px 0 20px 0;
-	margin:0;
-	font-family: 'Lato', sans-serif;
-}
-
-/* ----------------------------- MEDIA QUERIES 760 PIXELS ---*/
-@media (min-width: 760px) 
-{
- 
- .header
- {
-	 padding-top:2%;
-	padding-bottom:2%;
-	font-size:30px;
- }
-h1
-{
-margin:0;
+h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    color: #f4e1c3;
+    text-shadow: 3px 3px 6px black;
     font-size: 2.2em;
-text-align:center;
-font-family: 'Amaranth', sans-serif;
 }
 
-.row
-{
-	display:flex; 
-	flex-direction: row;
-	vertical-align:center;
-	align-items:center;
-	
-}
-label
-{
-
-	width:auto;
-
+.container {
+    margin: 5% auto;
+    width: 80%;
+    background: rgba(255, 255, 255, .6) url(../img/light-toast.png) repeat left top;
+    border-radius: 20px;
+    padding: 2%;
 }
 
-.tf{
-	margin-left:auto;
-	width:80%;
+h2 {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #d4915e;
+    font-size: 25px;
+    margin-top: 0;
 }
 
-.para1
-{
-	font-size:21px;
-}
-}
-/*---------------Subscription STYLING ------------*/
-
-.subscription {
-    font-family: 'PT Sans', sans-serif;
-    font-weight: bold;
-    color: #8B4513;
-    letter-spacing: 2px;
-    font-size: 20px;
-}
-
-.subscription-options {
-    margin: 15px 0;
-    padding: 10px;
-}
-
-.subscription-options label {
+.para1 {
+    text-align: center;
     font-family: 'Lato', sans-serif;
-    margin-left: 8px;
+    font-size: 18px;
+    color: #8b4d2b;
+    margin-bottom: 40px;
 }
 
-
-
-/*-----------Payment STYLING ------------*/
-
-.payment-methods {
+.magazines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     padding: 20px;
 }
 
-.payment-option {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+.magazine-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.payment-option:hover {
-    background-color: #f8f9fa;
+.magazine-card:hover {
+    transform: translateY(-5px);
 }
 
-.payment-option label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+.magazine-card img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.payment-option img {
-    height: 30px;
-    margin-left: 10px;
+.magazine-card h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #5a3313;
+    margin: 10px 0;
 }
 
-.card-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.card-details {
-    display: none;
-    margin-top: 15px;
-}
-
-#card:checked ~ .card-details {
-    display: block;
-}
-
-.card-details input {
-    margin-bottom: 10px;
-}
-
-.card-expiry-cvv {
-    display: flex;
-    gap: 10px;
-}
-
-.card-expiry-cvv input {
-    width: 50%;
-}
-
-.card-details .owner-input {
-    width: 100%;
-    margin-bottom: 10px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #f5e9de;
-    border: 2px solid #a06b4d;
-	color: #5a3313;
+.magazine-card p {
     font-family: 'Lato', sans-serif;
-    padding-right: 10px;
+    color: #8b4d2b;
 }
 
-.card-details .owner-input:focus {
-    outline: none;
-    border: 3px solid #a06b4d;
-    background-color: #f2dcc1;
-    transition: all 0.3s ease-in-out;
+.magazine-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
 }
 
+.magazine-card ul li {
+    font-family: 'Lato', sans-serif;
+    color: #8b4d2b;
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
 
+.magazine-card ul li:before {
+    content: "•";
+    color: #a56438;
+    position: absolute;
+    left: 0;
+}
 
+.subscribe-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #a56438;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #ab4c0d;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Lato', sans-serif;
+    color: #5a3313;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .magazines-grid {
+        grid-template-columns: 1fr;
+    }
+}
