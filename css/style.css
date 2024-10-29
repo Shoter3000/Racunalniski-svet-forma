@@ -281,6 +281,26 @@ label
 	font-size:21px;
 }
 }
+/*---------------Subscription STYLING ------------*/
+
+.subscription {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: #8B4513;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.subscription-options {
+    margin: 15px 0;
+    padding: 10px;
+}
+
+.subscription-options label {
+    font-family: 'Lato', sans-serif;
+    margin-left: 8px;
+}
+
 
 
 /*-----------Payment STYLING ------------*/

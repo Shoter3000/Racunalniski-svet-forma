@@ -31,7 +31,7 @@
             <fieldset>
                 <legend class="contact">Podatki o naročniku</legend>
                 <div class="row">
-                    <label for="name">Ime</label>
+                    <label for="name">Ime in priimek</label>
                     <div class="tf">
                         <input type="text" id="name" name="user_name" placeholder="Janez Novak" required><br />
                     </div>
@@ -276,13 +276,20 @@
                 </div>
             </fieldset>
             <div class="border_3"></div>
+
+            <fieldset>
+                <legend class="subscription">Vrsta naročnine</legend>
+                <div class="subscription-options">
+                    <input type="radio" name="radio" value="Last_number" id="single">
+                    <label for="single">Kupi samo zadnjo številko</label><br>
+                    <input type="radio" name="radio" value="Year_plan" id="yearly">
+                    <label for="yearly">Celoletna naročnina</label>
+                </div>
+            </fieldset>
+            <div class="border_3"></div>
+            
             <fieldset>
                 <legend class="payment">Plačilo</legend>
-                <p>Naročnina</p>
-                <input type="radio" name="radio" value="Html_format"><label> Kupi samo zadnjo
-                    številko</label><br></br />
-                <input type="radio" name="radio" value="Plain_format"><label> Celoletna naročnina</label><br><br />
-
                 <div class="payment-methods">
                     <div class="payment-option">
                         <input type="radio" id="card" name="payment" value="card">
