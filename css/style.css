@@ -141,7 +141,7 @@ input[placeholder]
 {
 	text-align:right;
 	padding-right:10px;
-	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-family: 'IBM Plex Sans Condensed', light, sans-serif;
 	letter-spacing:2px;
 }
 input[type="checkbox"]
@@ -151,7 +151,7 @@ input[type="checkbox"]
 }
 .dis
 {
-	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-family: 'IBM Plex Sans Condensed' light, sans-serif;
 	letter-spacing:2px;
 	padding-left:10px;
 	
@@ -203,7 +203,7 @@ button
 	border: 2px solid transparent;
 	background-color:#a56438;
 	color:#fff;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	font-style: oblique;
 	font-weight:900;
 	font-size:25px;
@@ -227,7 +227,7 @@ button:focus,button:hover
 }
 p
 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 }
 .footer
 {
