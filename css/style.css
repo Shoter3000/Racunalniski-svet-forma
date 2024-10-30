@@ -6,15 +6,18 @@ body {
     background: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-    padding: 0;
+
 }
 
-.header {
-    width: 100%;
-    background-color: #5a3313;
-    color: #f7e4d7;
-    padding: 2% 0;
+.header
+{
+	width:100%;
+	background-color:#5a3313;
+	color:#f7e4d7;
+	margin-top:0;
+	padding-top:3%;
+	padding-bottom:3%;
+	font-size:35px;
 }
 
 h1 {
@@ -23,7 +26,6 @@ h1 {
     font-family: 'Amaranth', sans-serif;
     color: #f4e1c3;
     text-shadow: 3px 3px 6px black;
-    font-size: 2.2em;
 }
 
 .container {
@@ -130,7 +132,7 @@ h2 {
     text-align: center;
     padding: 20px 0;
     font-family: 'Lato', sans-serif;
-    color: #5a3313;
+    color: black;
 }
 
 @media (max-width: 768px) {
