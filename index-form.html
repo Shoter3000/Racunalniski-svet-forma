@@ -33,38 +33,37 @@
                 <div class="row">
                     <label for="name">Ime in priimek</label>
                     <div class="tf">
-                        <input type="text" id="name" name="user_name" placeholder="Janez Novak" required><br />
+                        <input type="text" id="name" name="user_name" placeholder="Janez Novak" required><br><br />
                     </div>
                 </div>
                 <div class="row">
                     <label for="email">E-poštni naslov</label>
                     <div class="tf">
-                        <input type="email" id="email" name="user_mail" placeholder="janez.novak@gmail.com"
-                            required><br />
+                        <input type="email" id="email" name="user_mail" placeholder="janez.novak@gmail.com"required><br><br />
                     </div>
                 </div>
                 <div class="row">
                     <label for="number">Telefon</label>
                     <div class="tf">
-                        <input type="tel" id="number" name="user_number" placeholder="999999999"><br />
+                        <input type="tel" id="number" name="user_number" placeholder="999999999" required><br><br />
                     </div>
                 </div>
                 <div class="row">
                     <label for="address">Naslov</label>
                     <div class="tf">
-                        <input type="text" id="address" name="user_address" placeholder="Trubarjeva ulica 12"><br />
+                        <input type="text" id="address" name="user_address" placeholder="Trubarjeva ulica 12" required><br><br />
                     </div>
                 </div>
                 <div class="row">
                     <label for="city">Mesto</label>
                     <div class="tf">
-                        <input type="text" id="city" name="user_city" placeholder="Ljubljana"><br />
+                        <input type="text" id="city" name="user_city" placeholder="Ljubljana" required><br><br />
                     </div>
                 </div>
                 <div class="row">
                     <label for="state">Država</label>
                     <div class="tf">
-                        <select id="state"><br><br />
+                        <select id="state" required><br><br />
                             <option value="" disabled selected class="dis">Izberi državo</option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Albania">Albania</option>
@@ -271,7 +270,7 @@
                 <div class="row">
                     <label for="zip">Poštna številka</label><br><br />
                     <div class="tf">
-                        <input type="number" id="zip" name="zip_code" placeholder="1000"><br><br />
+                        <input type="number" id="zip" name="zip_code" placeholder="1000" maxlength="4" required><br><br />
                     </div>
                 </div>
             </fieldset>
@@ -280,9 +279,9 @@
             <fieldset>
                 <legend class="subscription">Vrsta naročnine</legend>
                 <div class="subscription-options">
-                    <input type="radio" name="radio" value="Last_number" id="single">
-                    <label for="single">Kupi samo zadnjo številko</label><br>
-                    <input type="radio" name="radio" value="Year_plan" id="yearly">
+                    <input type="radio" name="radio" value="Last_number" id="single" required>
+                    <label for="single">Kupi samo zadnjo številko</label><br><br />
+                    <input type="radio" name="radio" value="Year_plan" id="yearly" required>
                     <label for="yearly">Celoletna naročnina</label>
                 </div>
             </fieldset>
@@ -292,7 +291,7 @@
                 <legend class="payment">Plačilo</legend>
                 <div class="payment-methods">
                     <div class="payment-option">
-                        <input type="radio" id="card" name="payment" value="card">
+                        <input type="radio" id="card" name="payment" value="card" required><br><br />
                         <label for="card">
                             <span>Credit Card</span>
                             <div class="card-icons">
@@ -302,18 +301,18 @@
                             </div>
                         </label>
                         <div class="card-details">
-                            <input type="text" placeholder="Ime na kartici" class="owner-input">
-                            <input type="text" placeholder="Številka kartice" maxlength="16">
+                            <input type="text" placeholder="Ime na kartici" class="owner-input" ><br><br />
+                            <input type="text" placeholder="Številka kartice"><br><br />
                             <div class="card-expiry-cvv">
-                                <input type="text" placeholder="MM/YY" maxlength="5">
-                                <input type="text" placeholder="CVV" maxlength="3">
+                                <input type="text" placeholder="MM/YY" maxlength="5"><br><br />
+                                <input type="text" placeholder="CVV" maxlength="3"><br><br />
                             </div>
                         </div>
 
                     </div>
 
                     <div class="payment-option">
-                        <input type="radio" id="paypal" name="payment" value="paypal">
+                        <input type="radio" id="paypal" name="payment" value="paypal" required>
                         <label for="paypal">
                             <span>PayPal</span>
                             <img src="img/paypal.svg" alt="PayPal">
@@ -321,7 +320,7 @@
                     </div>
 
                     <div class="payment-option">
-                        <input type="radio" id="googlepay" name="payment" value="googlepay">
+                        <input type="radio" id="googlepay" name="payment" value="googlepay" required>
                         <label for="googlepay">
                             <span>Google Pay</span>
                             <img src="img/google-pay.svg" alt="Google Pay">
@@ -329,7 +328,7 @@
                     </div>
 
                     <div class="payment-option">
-                        <input type="radio" id="cod" name="payment" value="cod">
+                        <input type="radio" id="cod" name="payment" value="cod" required>
                         <label for="cod">
                             <span>Plačilo po povzetju</span>
                             <img src="img/cod.svg" alt="Cash on Delivery">
@@ -345,6 +344,7 @@
             <p class="footer">&copy; Copyright Računalniški svet</p>
         </form>
     </div>
+    <script src="js/card.js"></script>
 </body>
 
 </html>
