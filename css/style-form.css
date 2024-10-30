@@ -338,7 +338,7 @@ p
     transition: all 0.3s ease-in-out;
 }
 
-/* ----------------------------- MEDIA QUERIES 760 PIXELS ---*/
+/* ----------------------------- MEDIA QUERIES ----------------------------- */
 @media (min-width: 760px) 
 {
  
@@ -380,7 +380,84 @@ label
 {
 	font-size:21px;
 }
+
+.payment-methods {
+	gap: 20px;
 }
+
+.payment-option {
+	padding: 20px;
+}
+
+.card-expiry-cvv {
+	display: flex;
+	gap: 20px;
+}
+
+.card-icons {
+	display: flex;
+	gap: 15px;
+}
+
+.card-icons img {
+	height: 30px;
+}
+
+textarea {
+	min-height: 120px;
+}
+}
+
+/* Small devices (phones, up to 480px) */
+@media (max-width: 480px) {
+    .payment-option label {
+        font-size: 14px;
+    }
+    
+    .card-icons img {
+        height: 20px;
+    }
+    
+    textarea {
+        min-height: 80px;
+    }
+}
+
+/* Medium devices (tablets, 481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .payment-methods {
+        gap: 15px;
+    }
+    
+    .card-expiry-cvv {
+        display: flex;
+        gap: 10px;
+    }
+    
+    textarea {
+        min-height: 100px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .payment-methods {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .payment-option {
+        padding: 25px;
+    }
+    
+    textarea {
+        max-width: 800px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
 
 /* -------------------- Sweetalert -----------------*/
 .swal2-popup .swal2-confirm {
