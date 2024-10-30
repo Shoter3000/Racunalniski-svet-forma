@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/style-form.css">
 
 </head>
@@ -27,7 +28,7 @@
 
         <div class="border-up"></div>
         <div class="border-down"></div>
-        <form method="post">
+        <form id="orderForm" method="post" novalidate>
             <fieldset>
                 <legend class="contact">Podatki o naročniku</legend>
                 <div class="row">
@@ -45,7 +46,7 @@
                 <div class="row">
                     <label for="number">Telefon</label>
                     <div class="tf">
-                        <input type="tel" id="number" name="user_number" placeholder="999999999" required><br><br />
+                        <input type="tel" id="number" name="user_number" placeholder="030-111-111" required><br><br />
                     </div>
                 </div>
                 <div class="row">
@@ -344,8 +345,10 @@
             <p class="footer">&copy; Copyright Računalniški svet</p>
         </form>
     </div>
+    <script src="js/form-alerts.js"></script>
     <script src="js/card.js"></script>
     <script src="js/zipCode.js"></script>
+    <script src="js/phone.js"></script>
 </body>
 
 </html>
