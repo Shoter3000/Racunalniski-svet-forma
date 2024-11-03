@@ -23,7 +23,7 @@ Spletna aplikacija za naročilo na časopis Računalniški svet. Obrazec vsebuje
 
 ## Razvijalci
 
-Projekt vzdržuje ekipa Računalniškega sveta.
+Shoter3000
 
 ## Licenca
 
