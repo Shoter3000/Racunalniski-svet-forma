@@ -3,7 +3,7 @@
 	box-sizing: border-box;
 
 }
-/* ------------------------------------------ LAYOUT RULES --*/
+/* ------------------------------------------ LAYOUT RULES ----------------------------------------- */
 body {
     background: url(../img/bg.png);
     background-repeat: no-repeat;
@@ -339,6 +339,60 @@ p
 }
 
 /* ----------------------------- MEDIA QUERIES ----------------------------- */
+
+/* Small devices (phones, up to 480px) */
+@media (max-width: 480px) {
+    .payment-option label {
+        font-size: 14px;
+    }
+    
+    .card-icons img {
+        height: 20px;
+    }
+    
+    ttextarea {
+        min-height: 60px;
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    button {
+        width: 80%;
+        margin: 0 10%;
+        padding: 8px;
+        font-size: 20px;
+    }
+}
+
+/* Medium devices (tablets, 481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .payment-methods {
+        gap: 15px;
+    }
+    
+    .card-expiry-cvv {
+        display: flex;
+        gap: 10px;
+    }
+    
+    textarea {
+        min-height: 120px;
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        padding: 12px;
+        line-height: 1.5;
+    }
+    
+    button {
+        width: 50%;
+        margin: 20px 25%;
+        padding: 12px;
+        font-size: 22px;
+        transition: all 0.3s ease;
+    }
+}
+
 @media (min-width: 760px) 
 {
  
@@ -407,39 +461,6 @@ textarea {
 	min-height: 120px;
 }
 }
-
-/* Small devices (phones, up to 480px) */
-@media (max-width: 480px) {
-    .payment-option label {
-        font-size: 14px;
-    }
-    
-    .card-icons img {
-        height: 20px;
-    }
-    
-    textarea {
-        min-height: 80px;
-    }
-}
-
-/* Medium devices (tablets, 481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-    .payment-methods {
-        gap: 15px;
-    }
-    
-    .card-expiry-cvv {
-        display: flex;
-        gap: 10px;
-    }
-    
-    textarea {
-        min-height: 100px;
-    }
-}
-
-
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .payment-methods {
@@ -463,6 +484,6 @@ textarea {
 .swal2-popup .swal2-confirm {
     width: auto;
     padding: 10px 20px;
-    font-size: 16px; /* Adjust as needed */
+    font-size: 16px;
     box-sizing: content-box;
 }
