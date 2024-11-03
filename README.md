@@ -1,12 +1,15 @@
 # Računalniški svet - Naročniški obrazec
 
 Spletna aplikacija za naročilo na časopis Računalniški svet. Obrazec vsebuje validacijo podatkov in formatiranje vnosnih polj.
-
+Povezava: https://shoter3000.github.io/Racunalniski-svet/
 ## Funkcionalnosti
 
 - Validacija podatkov v realnem času
-- Formatiranje številke kreditne kartice (avtomatsko dodajanje presledkov)
-- Preverjanje poštne številke
+- Preverjanje formata elektronskega naslova
+- Formatiranje telefonske številke
+- Preverjanje dolžine poštne številke
+- Formatiranje številke kreditne kartice
+- Kontroliran vnos datuma veljavnosti in CVV
 - Preprečevanje vnosa neveljavnih znakov
 
 ## Tehnologije
@@ -29,4 +32,3 @@ Shoter3000
 
 MIT License
 
-Link: https://shoter3000.github.io/Racunalniski-svet/
