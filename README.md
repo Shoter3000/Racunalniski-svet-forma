@@ -1,6 +1,6 @@
 # Računalniški svet - Naročniški obrazec
 
-Spletna aplikacija za naročilo na časopis Računalniški svet. Obrazec vsebuje validacijo podatkov in formatiranje vnosnih polj.
+Spletna aplikacija za naročilo na časopis Računalniški svet. Obrazec vsebuje validacijo podatkov in formatiranje vnosnih polj.<br>
 Povezava: https://shoter3000.github.io/Racunalniski-svet/
 ## Funkcionalnosti
 
