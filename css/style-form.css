@@ -4,6 +4,20 @@
 
 }
 /* ------------------------------------------ LAYOUT RULES ----------------------------------------- */
+.form-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.contact-column, 
+.payment-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+}
+
 body {
     background: url(../img/bg.png);
     background-repeat: no-repeat;
@@ -139,7 +153,7 @@ textarea
 }	 
 input[placeholder]
 {
-	text-align:right;
+	text-align:left;
 	padding-right:10px;
 	font-family: 'IBM Plex Sans Condensed', light, sans-serif;
 	letter-spacing:2px;
@@ -238,6 +252,32 @@ p
 	font-family: 'Lato', sans-serif;
 	color: black;
 }
+
+.notes-column {
+    width: 100%;
+    text-align: center;
+}
+
+.notes {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: #8B4513;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.notes-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.notes-container textarea {
+    width: 80%;
+    max-width: 800px;
+}
+
 
 /*---------------Subscription STYLING ------------*/
 
@@ -340,6 +380,20 @@ p
 
 /* ----------------------------- MEDIA QUERIES ----------------------------- */
 
+.form-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.contact-column, 
+.payment-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+}
+
 /* Small devices (phones, up to 480px) */
 @media (max-width: 480px) {
     .payment-option label {
@@ -410,14 +464,20 @@ text-align:center;
 font-family: 'Amaranth', sans-serif;
 }
 
-.row
-{
-	display:flex; 
-	flex-direction: row;
-	vertical-align:center;
-	align-items:center;
-	
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px; 
 }
+
+.row label {
+    width: 150px; 
+    text-align: right;
+    margin-right: 20px; 
+    flex-shrink: 0;
+}
+
 label
 {
 
@@ -425,9 +485,13 @@ label
 
 }
 
-.tf{
-	margin-left:auto;
-	width:80%;
+.tf {
+    flex-grow: 1;
+    margin-left: 0;
+}
+
+.row input {
+    width: 100%;
 }
 
 .para1

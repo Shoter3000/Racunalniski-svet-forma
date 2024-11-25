@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const phone = document.getElementById('number').value.trim();
         const address = document.getElementById('address').value.trim();
         const city = document.getElementById('city').value.trim();
-        const country = document.getElementById('state').value;
         const zip = document.getElementById('zip').value.trim();
         const subscription = document.querySelector('input[name="radio"]:checked');
         const payment = document.querySelector('input[name="payment"]:checked');
@@ -58,16 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
             Swal.fire({
                 title: 'Napaka!',
                 text: 'Prosimo, vnesite vaše mesto.',
-                icon: 'error',
-                confirmButtonText: 'Zapri'
-            });
-            return;
-        }
-
-        if (!country) {
-            Swal.fire({
-                title: 'Napaka!',
-                text: 'Prosimo, izberite vašo državo.',
                 icon: 'error',
                 confirmButtonText: 'Zapri'
             });
