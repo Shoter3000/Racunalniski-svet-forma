@@ -38,7 +38,7 @@ h1
 {
 	margin:0;
 	text-align:center;
-	font-family: 'Amaranth', sans-serif;
+	font-family: 'Calibri', sans-serif;
 	color: #f4e1c3;
 	text-shadow: 3px 3px 6px black;
 }
@@ -380,168 +380,167 @@ p
 
 /* ----------------------------- MEDIA QUERIES ----------------------------- */
 
-.form-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-}
+/* ----------------------------- RESPONSIVE MEDIA QUERIES ----------------------------- */
 
-.contact-column, 
-.payment-column {
-    flex: 1;
-    min-width: 300px;
-    max-width: 48%;
-}
-
-/* Small devices (phones, up to 480px) */
+/* Extra Small Devices (Mobile Phones) */
 @media (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 2% auto;
+    }
+
+    .form-columns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-column, 
+    .payment-column {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 10px;
+    }
+
+    .row label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .tf {
+        width: 100%;
+    }
+
     .payment-option label {
-        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
-    .card-icons img {
-        height: 20px;
+
+    .card-icons {
+        margin-top: 10px;
     }
-    
-    ttextarea {
-        min-height: 60px;
-        font-size: 14px;
-        padding: 8px;
-    }
-    
+
     button {
-        width: 80%;
-        margin: 0 10%;
-        padding: 8px;
+        width: 100%;
+        margin: 20px 0;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 80px;
+    }
+}
+
+/* Small to Medium Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 85%;
+        margin: 3% auto;
+    }
+
+    .form-columns {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contact-column, 
+    .payment-column {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .row label {
+        width: 120px;
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    .payment-methods {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .payment-option {
+        flex-basis: calc(50% - 15px);
+    }
+
+    button {
+        width: 70%;
+        margin: 20px 15%;
+        padding: 10px;
         font-size: 20px;
     }
 }
 
-/* Medium devices (tablets, 481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-    .payment-methods {
-        gap: 15px;
+/* Large Devices (Desktops) */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .container {
+        width: 75%;
+        margin: 4% auto;
     }
-    
-    .card-expiry-cvv {
+
+    .form-columns {
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
     }
-    
-    textarea {
-        min-height: 120px;
-        width: 95%;
-        margin: 0 auto;
-        display: block;
-        padding: 12px;
-        line-height: 1.5;
+
+    .contact-column, 
+    .payment-column {
+        flex-basis: calc(50% - 25px);
+        max-width: calc(50% - 25px);
     }
-    
-    button {
-        width: 50%;
-        margin: 20px 25%;
-        padding: 12px;
-        font-size: 22px;
-        transition: all 0.3s ease;
-    }
-}
 
-@media (min-width: 760px) 
-{
- 
- .header
- {
-	 padding-top:2%;
-	padding-bottom:2%;
-	font-size:30px;
- }
-h1
-{
-margin:0;
-    font-size: 2.2em;
-text-align:center;
-font-family: 'Amaranth', sans-serif;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 15px; 
-}
-
-.row label {
-    width: 150px; 
-    text-align: right;
-    margin-right: 20px; 
-    flex-shrink: 0;
-}
-
-label
-{
-
-	width:auto;
-
-}
-
-.tf {
-    flex-grow: 1;
-    margin-left: 0;
-}
-
-.row input {
-    width: 100%;
-}
-
-.para1
-{
-	font-size:21px;
-}
-
-.payment-methods {
-	gap: 20px;
-}
-
-.payment-option {
-	padding: 20px;
-}
-
-.card-expiry-cvv {
-	display: flex;
-	gap: 20px;
-}
-
-.card-icons {
-	display: flex;
-	gap: 15px;
-}
-
-.card-icons img {
-	height: 30px;
-}
-
-textarea {
-	min-height: 120px;
-}
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
     .payment-methods {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .payment-option {
-        padding: 25px;
-    }
-    
-    textarea {
-        max-width: 800px;
-        margin: 0 auto;
-        display: block;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+    .container {
+        width: 65%;
+        max-width: 1200px;
+        margin: 5% auto;
+    }
+
+    .form-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-column, 
+    .payment-column {
+        flex-basis: calc(50% - 30px);
+        max-width: calc(50% - 30px);
+    }
+
+    .payment-methods {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+/* High Resolution Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
 
 
 /* -------------------- Sweetalert -----------------*/
