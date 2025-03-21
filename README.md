@@ -1,7 +1,6 @@
 # Računalniški svet - Naročniški obrazec
 
-Šolski projekt - Spletni obrazec za naročilo na časopis Računalniški svet.<br>
-Povezava: https://shoter3000.github.io/Racunalniski-svet/
+Šolski projekt - Spletni obrazec za naročilo na časopis [Računalniški svet](https://shoter3000.github.io/Racunalniski-svet-forma/).
 ## Funkcionalnosti
 
 - Validacija podatkov v realnem času
